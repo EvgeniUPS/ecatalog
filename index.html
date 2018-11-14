@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/data.js"></script>
+    <title>Ecatalog</title>
+  </head>
+  <body>
+    <header class="header">header</header>
+    <main class="main">
+      <div id="app">
+        <div class="products" id="product-list">
+          <template id="product-tpl">
+            <div class="product">
+              <div class="product-header">{factory} <small>{id}</small></div>
+              <div class="product-image"><img src="{image}" alt="{id}" /></div>
+              <div class="product-description">{description}</div>
+              <div class="product-price">42268</div>
+            </div>
+          </template>
+
+          <!--
+            <div class="product">
+              <div class="product-header">Natuzzi Editions</div>
+              <div class="product-image">
+                <img src="./img/afrodita-avorio.jpg" alt="" />
+              </div>
+              <div class="product-description">Test description</div>
+              <div class="product-price">42268</div>
+            </div>
+          -->
+        </div>
+      </div>
+      <hr />
+      <!-- ********************** -->
+      <div class="tracks-table">
+        <table class="table" id="songs-list"></table>
+      </div>
+
+      <template id="song-tpl">
+        <tr class="mess-hide">
+          <div class="product">
+            <div class="product-header">{factory}</div>
+            <div class="product-image">
+              <img src="./img/afrodita-avorio.jpg" alt="" />
+            </div>
+            <div class="product-description">{description}</div>
+            <div class="product-price">42268</div>
+          </div>
+        </tr>
+      </template>
+    </main>
+
+    <footer class="footer">footer</footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
